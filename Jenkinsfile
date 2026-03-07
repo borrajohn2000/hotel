@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-               git branch: 'main', url: 'https://github.com/vijay254452/hotel.git'
+               git branch: 'main', url: 'https://github.com/sai798187/hotel.git'
             }
         }
 
@@ -42,7 +42,7 @@ pipeline {
                 sh '''
                     docker stop restaurant || true
                     docker rm restaurant || true
-                    docker run -d -p 3247:8080 --name restaurant ${IMAGE_NAME}:latest
+                    docker run -d -p 4444:8080 --name restaurant ${IMAGE_NAME}:latest
                 '''
             }
         }
