@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_CREDENTIALS = 'dockerhub-id' // Replace with your Jenkins DockerHub credentials ID
-        IMAGE_NAME = 'vijay3247/restaurant-site'
+        DOCKERHUB_CREDENTIALS = 'dockerhub_cred' // Replace with your Jenkins DockerHub credentials ID
+        IMAGE_NAME = 'sai798187/hotel'
     }
 
     stages {
